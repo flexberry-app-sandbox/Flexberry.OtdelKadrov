@@ -28,49 +28,49 @@ export default Controller.extend({
             link: 'i-i-s-otdel-kadrov-график-l',
             caption: i18n.t('forms.application.sitemap.otdel-kadrov.i-i-s-otdel-kadrov-график-l.caption'),
             title: i18n.t('forms.application.sitemap.otdel-kadrov.i-i-s-otdel-kadrov-график-l.title'),
-            icon: 'archive',
+            icon: 'edit',
             children: null
           }, {
             link: 'i-i-s-otdel-kadrov-прием-l',
             caption: i18n.t('forms.application.sitemap.otdel-kadrov.i-i-s-otdel-kadrov-прием-l.caption'),
             title: i18n.t('forms.application.sitemap.otdel-kadrov.i-i-s-otdel-kadrov-прием-l.title'),
-            icon: 'paperclip',
+            icon: 'folder',
             children: null
           }, {
             link: 'i-i-s-otdel-kadrov-увольнение-l',
             caption: i18n.t('forms.application.sitemap.otdel-kadrov.i-i-s-otdel-kadrov-увольнение-l.caption'),
             title: i18n.t('forms.application.sitemap.otdel-kadrov.i-i-s-otdel-kadrov-увольнение-l.title'),
-            icon: 'list',
+            icon: 'building',
             children: null
           }, {
             link: 'i-i-s-otdel-kadrov-подразделения-l',
             caption: i18n.t('forms.application.sitemap.otdel-kadrov.i-i-s-otdel-kadrov-подразделения-l.caption'),
             title: i18n.t('forms.application.sitemap.otdel-kadrov.i-i-s-otdel-kadrov-подразделения-l.title'),
-            icon: 'file',
+            icon: 'tags',
             children: null
           }, {
             link: 'i-i-s-otdel-kadrov-расчет-l',
             caption: i18n.t('forms.application.sitemap.otdel-kadrov.i-i-s-otdel-kadrov-расчет-l.caption'),
             title: i18n.t('forms.application.sitemap.otdel-kadrov.i-i-s-otdel-kadrov-расчет-l.title'),
-            icon: 'book',
+            icon: 'chart bar',
             children: null
           }, {
             link: 'i-i-s-otdel-kadrov-сотрудник-l',
             caption: i18n.t('forms.application.sitemap.otdel-kadrov.i-i-s-otdel-kadrov-сотрудник-l.caption'),
             title: i18n.t('forms.application.sitemap.otdel-kadrov.i-i-s-otdel-kadrov-сотрудник-l.title'),
-            icon: 'folder',
+            icon: 'list',
             children: null
           }, {
             link: 'i-i-s-otdel-kadrov-должности-l',
             caption: i18n.t('forms.application.sitemap.otdel-kadrov.i-i-s-otdel-kadrov-должности-l.caption'),
             title: i18n.t('forms.application.sitemap.otdel-kadrov.i-i-s-otdel-kadrov-должности-l.title'),
-            icon: 'building',
+            icon: 'book',
             children: null
           }, {
             link: 'i-i-s-otdel-kadrov-начальник-l',
             caption: i18n.t('forms.application.sitemap.otdel-kadrov.i-i-s-otdel-kadrov-начальник-l.caption'),
             title: i18n.t('forms.application.sitemap.otdel-kadrov.i-i-s-otdel-kadrov-начальник-l.title'),
-            icon: 'tasks',
+            icon: 'tags',
             children: null
           }]
         }, {
@@ -82,19 +82,19 @@ export default Controller.extend({
             link: 'i-i-s-otdel-kadrov-сотрудник-l',
             caption: i18n.t('forms.application.sitemap.справочники.i-i-s-otdel-kadrov-сотрудник-l.caption'),
             title: i18n.t('forms.application.sitemap.справочники.i-i-s-otdel-kadrov-сотрудник-l.title'),
-            icon: 'suitcase',
+            icon: 'archive',
             children: null
           }, {
             link: 'i-i-s-otdel-kadrov-подразделения-l',
             caption: i18n.t('forms.application.sitemap.справочники.i-i-s-otdel-kadrov-подразделения-l.caption'),
             title: i18n.t('forms.application.sitemap.справочники.i-i-s-otdel-kadrov-подразделения-l.title'),
-            icon: 'table',
+            icon: 'folder',
             children: null
           }, {
             link: 'i-i-s-otdel-kadrov-должности-l',
             caption: i18n.t('forms.application.sitemap.справочники.i-i-s-otdel-kadrov-должности-l.caption'),
             title: i18n.t('forms.application.sitemap.справочники.i-i-s-otdel-kadrov-должности-l.title'),
-            icon: 'list',
+            icon: 'tags',
             children: null
           }]
         }

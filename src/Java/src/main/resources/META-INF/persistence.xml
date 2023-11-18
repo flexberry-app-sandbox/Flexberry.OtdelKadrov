@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1"
+	xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistencehttp://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+    <persistence-unit name="Olingo4PG">
+        <class>Otdel_kadrov.model.Grafik</class>
+        <class>Otdel_kadrov.model.Priem</class>
+        <class>Otdel_kadrov.model.Uvolnenie</class>
+        <class>Otdel_kadrov.model.Podrazdeleniya</class>
+        <class>Otdel_kadrov.model.Raschet</class>
+        <class>Otdel_kadrov.model.Sotrudnik</class>
+        <class>Otdel_kadrov.model.Dolzhnosti</class>
+        <class>Otdel_kadrov.model.Nachalnik</class>
+        <class>Otdel_kadrov.model.FlexberryAdvLimit</class>
+        <class>Otdel_kadrov.model.NewPlatformFlexberryFlexberryUserSetting</class>
+        <class>Otdel_kadrov.model.NewPlatformFlexberryServicesLock</class>
+        <class>Otdel_kadrov.model.IISCaseberryLoggingObjectsApplicationLog</class>
+
+    </persistence-unit>
+</persistence>
