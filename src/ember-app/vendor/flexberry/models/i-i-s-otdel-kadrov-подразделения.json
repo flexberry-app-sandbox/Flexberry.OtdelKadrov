@@ -1,0 +1,15 @@
+﻿{
+  "name": "IISOtdel_kadrovПодразделения",
+  "modelName": "i-i-s-otdel-kadrov-подразделения",
+  "className": "Подразделения",
+  "nameSpace": "IIS.Otdel_kadrov",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

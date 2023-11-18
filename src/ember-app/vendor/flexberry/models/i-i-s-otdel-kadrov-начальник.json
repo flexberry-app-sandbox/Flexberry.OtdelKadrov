@@ -1,0 +1,33 @@
+﻿{
+  "name": "IISOtdel_kadrovНачальник",
+  "modelName": "i-i-s-otdel-kadrov-начальник",
+  "className": "Начальник",
+  "nameSpace": "IIS.Otdel_kadrov",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "iDсотрдника",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "сотрудник",
+      "relatedTo": "i-i-s-otdel-kadrov-сотрудник",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [],
+  "stored": true,
+  "offline": true,
+  "external": false
+}
