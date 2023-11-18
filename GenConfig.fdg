@@ -25,9 +25,9 @@
       }
     },
     "Backend": {
-      "AspNet": true,
-      "AspNetCore": false,
-      "Java": false
+      "AspNet": false,
+      "AspNetCore": true,
+      "Java": true
     },
     "Docker": {
       "Dockerfile": true,
@@ -45,11 +45,11 @@
         "ConnectionString": null
       },
       "PostgreSql": {
-        "DiffSql": false,
+        "DiffSql": true,
         "FullSql": true,
-        "LiquibaseSql": false,
-        "Security": false,
-        "AdminUser": false,
+        "LiquibaseSql": true,
+        "Security": true,
+        "AdminUser": true,
         "ConnectionString": null
       },
       "ClickHouse": {
