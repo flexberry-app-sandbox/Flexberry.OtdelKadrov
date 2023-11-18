@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-otdel-kadrov-прием-e",
+  "editForm": "i-i-s-otdel-kadrov-прием-e",
+  "external": false,
+  "caption": "Прием",
+  "name": "IISOtdel_kadrovПриемL",
+  "className": "ПриемL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-otdel-kadrov-прием",
+      "modelProjection": "ПриемL"
+    }
+  ]
+}

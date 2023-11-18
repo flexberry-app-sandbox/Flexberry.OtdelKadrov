@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-otdel-kadrov-график-e",
+  "editForm": "i-i-s-otdel-kadrov-график-e",
+  "external": false,
+  "caption": "График",
+  "name": "IISOtdel_kadrovГрафикL",
+  "className": "ГрафикL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-otdel-kadrov-график",
+      "modelProjection": "ГрафикL"
+    }
+  ]
+}

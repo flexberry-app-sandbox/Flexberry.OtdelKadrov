@@ -26,7 +26,80 @@
     }
   ],
   "hasMany": [],
-  "projections": [],
+  "projections": [
+    {
+      "name": "НачальникE",
+      "modelName": "i-i-s-otdel-kadrov-начальник",
+      "attrs": [
+        {
+          "name": "iDсотрдника",
+          "caption": "I dсотрдника",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "IDдолжности",
+          "lookupValueField": "iDдолжности",
+          "relationName": "Сотрудник",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "iDдолжности",
+              "caption": "I dдолжности",
+              "hidden": true,
+              "index": 2
+            }
+          ],
+          "index": 1,
+          "type": "standard",
+          "caption": "Сотрудник",
+          "name": "сотрудник",
+          "relatedTo": "i-i-s-otdel-kadrov-сотрудник",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "НачальникL",
+      "modelName": "i-i-s-otdel-kadrov-начальник",
+      "attrs": [
+        {
+          "name": "iDсотрдника",
+          "caption": "I dсотрдника",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Сотрудник",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "iDдолжности",
+              "caption": "I dдолжности",
+              "hidden": false,
+              "index": 1
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "I dдолжности",
+          "name": "сотрудник",
+          "relatedTo": "i-i-s-otdel-kadrov-сотрудник",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
   "stored": true,
   "offline": true,
   "external": false

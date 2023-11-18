@@ -1,6 +1,100 @@
 ﻿{
-  "applicationCaption": null,
-  "applicationTitle": null,
-  "items": [],
+  "applicationCaption": "Otdel_kadrov",
+  "applicationTitle": "Otdel_kadrov",
+  "items": [
+    {
+      "link": null,
+      "menuName": "otdel-kadrov",
+      "caption": "Otdel_kadrov",
+      "title": "Otdel_kadrov",
+      "children": [
+        {
+          "link": "i-i-s-otdel-kadrov-график-l",
+          "menuName": null,
+          "caption": "График",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-otdel-kadrov-прием-l",
+          "menuName": null,
+          "caption": "Прием",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-otdel-kadrov-увольнение-l",
+          "menuName": null,
+          "caption": "Увольнение",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-otdel-kadrov-подразделения-l",
+          "menuName": null,
+          "caption": "Подразделения",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-otdel-kadrov-расчет-l",
+          "menuName": null,
+          "caption": "Расчет",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-otdel-kadrov-сотрудник-l",
+          "menuName": null,
+          "caption": "Сотрудник",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-otdel-kadrov-должности-l",
+          "menuName": null,
+          "caption": "Должности",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-otdel-kadrov-начальник-l",
+          "menuName": null,
+          "caption": "Начальник",
+          "title": "",
+          "children": null
+        }
+      ]
+    },
+    {
+      "link": null,
+      "menuName": "справочники",
+      "caption": "Справочники",
+      "title": "Справочники",
+      "children": [
+        {
+          "link": "i-i-s-otdel-kadrov-сотрудник-l",
+          "menuName": null,
+          "caption": "СотрудникL",
+          "title": "Сотрудник",
+          "children": null
+        },
+        {
+          "link": "i-i-s-otdel-kadrov-подразделения-l",
+          "menuName": null,
+          "caption": "ПодразделенияL",
+          "title": "Подразделения",
+          "children": null
+        },
+        {
+          "link": "i-i-s-otdel-kadrov-должности-l",
+          "menuName": null,
+          "caption": "ДолжностиL",
+          "title": "Должности",
+          "children": null
+        }
+      ]
+    }
+  ],
   "mobile": true
 }

@@ -42,7 +42,77 @@
     }
   ],
   "hasMany": [],
-  "projections": [],
+  "projections": [
+    {
+      "name": "СотрудникE",
+      "modelName": "i-i-s-otdel-kadrov-сотрудник",
+      "attrs": [
+        {
+          "name": "iDдолжности",
+          "caption": "I dдолжности",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "iDПодразделения",
+          "caption": "I d подразделения",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Должности",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [],
+          "index": 2,
+          "type": "standard",
+          "caption": "Должности",
+          "name": "должности",
+          "relatedTo": "i-i-s-otdel-kadrov-должности",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Подразделения",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [],
+          "index": 3,
+          "type": "standard",
+          "caption": "Подразделения",
+          "name": "подразделения",
+          "relatedTo": "i-i-s-otdel-kadrov-подразделения",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "СотрудникL",
+      "modelName": "i-i-s-otdel-kadrov-сотрудник",
+      "attrs": [
+        {
+          "name": "iDдолжности",
+          "caption": "I dдолжности",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "iDПодразделения",
+          "caption": "I d подразделения",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
   "stored": true,
   "offline": true,
   "external": false

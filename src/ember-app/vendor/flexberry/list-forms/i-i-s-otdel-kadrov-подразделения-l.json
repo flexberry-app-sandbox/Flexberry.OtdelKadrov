@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-otdel-kadrov-подразделения-e",
+  "editForm": "i-i-s-otdel-kadrov-подразделения-e",
+  "external": false,
+  "caption": "Подразделения",
+  "name": "IISOtdel_kadrovПодразделенияL",
+  "className": "ПодразделенияL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-otdel-kadrov-подразделения",
+      "modelProjection": "ПодразделенияL"
+    }
+  ]
+}

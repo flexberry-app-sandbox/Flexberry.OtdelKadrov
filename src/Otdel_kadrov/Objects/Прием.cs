@@ -28,6 +28,23 @@ namespace IIS.Otdel_kadrov
     // *** End programmer edit section *** (Прием CustomAttributes)
     [AutoAltered()]
     [AccessType(ICSSoft.STORMNET.AccessType.none)]
+    [View("ПриемE", new string[] {
+            "IDсотрдника as \'I dсотрдника\'",
+            "IDдолжности as \'I dдолжности\'",
+            "IDподразделения as \'I dподразделения\'",
+            "Подразделения as \'Подразделения\'",
+            "Начальник as \'Начальник\'",
+            "Начальник.IDсотрдника as \'I dсотрдника\'",
+            "Должности as \'Должности\'"}, Hidden=new string[] {
+            "Начальник.IDсотрдника"})]
+    [MasterViewDefineAttribute("ПриемE", "Подразделения", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "")]
+    [MasterViewDefineAttribute("ПриемE", "Начальник", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "IDсотрдника")]
+    [MasterViewDefineAttribute("ПриемE", "Должности", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "")]
+    [View("ПриемL", new string[] {
+            "IDсотрдника as \'I dсотрдника\'",
+            "IDдолжности as \'I dдолжности\'",
+            "IDподразделения as \'I dподразделения\'",
+            "Начальник.IDсотрдника as \'I dсотрдника\'"})]
     public class Прием : ICSSoft.STORMNET.DataObject
     {
         
@@ -243,6 +260,35 @@ namespace IIS.Otdel_kadrov
                 // *** Start programmer edit section *** (Прием.Подразделения Set end)
 
                 // *** End programmer edit section *** (Прием.Подразделения Set end)
+            }
+        }
+        
+        /// <summary>
+        /// Class views container.
+        /// </summary>
+        public class Views
+        {
+            
+            /// <summary>
+            /// "ПриемE" view.
+            /// </summary>
+            public static ICSSoft.STORMNET.View ПриемE
+            {
+                get
+                {
+                    return ICSSoft.STORMNET.Information.GetView("ПриемE", typeof(IIS.Otdel_kadrov.Прием));
+                }
+            }
+            
+            /// <summary>
+            /// "ПриемL" view.
+            /// </summary>
+            public static ICSSoft.STORMNET.View ПриемL
+            {
+                get
+                {
+                    return ICSSoft.STORMNET.Information.GetView("ПриемL", typeof(IIS.Otdel_kadrov.Прием));
+                }
             }
         }
     }

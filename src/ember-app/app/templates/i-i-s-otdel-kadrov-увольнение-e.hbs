@@ -1,0 +1,97 @@
+<h3 class="ui header">{{t "forms.i-i-s-otdel-kadrov-увольнение-e.caption"}}</h3>
+
+<form class="ui form flexberry-vertical-form" role="form">
+  {{flexberry-error error=error}}
+  <div class="field">
+    <div class="flexberry-edit-panel">
+      {{#unless readonly}}
+        <button class="ui button save-button" {{action "save"}}>
+          {{t "forms.edit-form.save-button-text"}}
+        </button>
+        {{#unless model.isNew}}
+          <button class="ui button save-del-button" {{action "delete"}}>
+            {{t "forms.edit-form.delete-button-text"}}
+          </button>
+        {{/unless}}
+      {{/unless}}
+      <button class="ui button close-button" {{action "close"}}>
+        {{t "forms.edit-form.close-button-text"}}
+      </button>
+    </div>
+  </div>
+  <div class="field flexberry-validationsummary-container">
+    <div class="sixteen wide">
+      {{flexberry-validationsummary errors=(v-get validationObject "messages")}}
+    </div>
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.iDсотрдника
+      class=(if (v-get validationModel "iDсотрдника" "isInvalid") "error")
+      label=(t "forms.i-i-s-otdel-kadrov-увольнение-e.iDсотрдника-caption")
+      data-test-i-i-s-otdel-kadrov-увольнение-e-iDсотрдника=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "iDсотрдника" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.iDподразделения
+      class=(if (v-get validationModel "iDподразделения" "isInvalid") "error")
+      label=(t "forms.i-i-s-otdel-kadrov-увольнение-e.iDподразделения-caption")
+      data-test-i-i-s-otdel-kadrov-увольнение-e-iDподразделения=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "iDподразделения" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-otdel-kadrov-увольнение-e.подразделения-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.подразделения
+      relationName="подразделения"
+      projection="ПодразделенияL"
+      title=(t "forms.i-i-s-otdel-kadrov-увольнение-e.подразделения-caption")
+      readonly=readonly
+      componentName="подразделенияLookup"
+      class=(if (v-get validationModel "подразделения" "isInvalid") "error")
+      data-test-i-i-s-otdel-kadrov-увольнение-e-подразделения=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "подразделения" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-otdel-kadrov-увольнение-e.должности-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.должности
+      relationName="должности"
+      projection="ДолжностиL"
+      title=(t "forms.i-i-s-otdel-kadrov-увольнение-e.должности-caption")
+      readonly=readonly
+      componentName="должностиLookup"
+      class=(if (v-get validationModel "должности" "isInvalid") "error")
+      data-test-i-i-s-otdel-kadrov-увольнение-e-должности=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "должности" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-otdel-kadrov-увольнение-e.начальник-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.начальник
+      displayAttributeName="iDсотрдника"
+      autocomplete=true
+      relationName="начальник"
+      projection="НачальникL"
+      title=(t "forms.i-i-s-otdel-kadrov-увольнение-e.начальник-caption")
+      readonly=readonly
+      componentName="начальникLookup"
+      class=(if (v-get validationModel "начальник" "isInvalid") "error")
+      data-test-i-i-s-otdel-kadrov-увольнение-e-начальник=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "начальник" "message")}}
+  </div>
+</form>

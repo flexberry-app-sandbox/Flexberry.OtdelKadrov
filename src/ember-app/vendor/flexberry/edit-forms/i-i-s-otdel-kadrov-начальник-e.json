@@ -1,0 +1,23 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Сотрудник",
+      "projection": "СотрудникL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Начальник",
+  "name": "IISOtdel_kadrovНачальникE",
+  "className": "НачальникE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-otdel-kadrov-начальник",
+      "modelProjection": "НачальникE"
+    }
+  ]
+}

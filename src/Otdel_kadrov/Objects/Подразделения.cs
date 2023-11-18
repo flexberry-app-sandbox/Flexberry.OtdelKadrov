@@ -28,6 +28,8 @@ namespace IIS.Otdel_kadrov
     // *** End programmer edit section *** (Подразделения CustomAttributes)
     [AutoAltered()]
     [AccessType(ICSSoft.STORMNET.AccessType.none)]
+    [View("ПодразделенияE", new string[0])]
+    [View("ПодразделенияL", new string[0])]
     public class Подразделения : ICSSoft.STORMNET.DataObject
     {
         
@@ -35,5 +37,34 @@ namespace IIS.Otdel_kadrov
 
         // *** End programmer edit section *** (Подразделения CustomMembers)
 
+        
+        /// <summary>
+        /// Class views container.
+        /// </summary>
+        public class Views
+        {
+            
+            /// <summary>
+            /// "ПодразделенияE" view.
+            /// </summary>
+            public static ICSSoft.STORMNET.View ПодразделенияE
+            {
+                get
+                {
+                    return ICSSoft.STORMNET.Information.GetView("ПодразделенияE", typeof(IIS.Otdel_kadrov.Подразделения));
+                }
+            }
+            
+            /// <summary>
+            /// "ПодразделенияL" view.
+            /// </summary>
+            public static ICSSoft.STORMNET.View ПодразделенияL
+            {
+                get
+                {
+                    return ICSSoft.STORMNET.Information.GetView("ПодразделенияL", typeof(IIS.Otdel_kadrov.Подразделения));
+                }
+            }
+        }
     }
 }

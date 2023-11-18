@@ -1,0 +1,23 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Начальник",
+      "projection": "НачальникL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "График",
+  "name": "IISOtdel_kadrovГрафикE",
+  "className": "ГрафикE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-otdel-kadrov-график",
+      "modelProjection": "ГрафикE"
+    }
+  ]
+}

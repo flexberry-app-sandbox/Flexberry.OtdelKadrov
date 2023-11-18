@@ -28,6 +28,15 @@ namespace IIS.Otdel_kadrov
     // *** End programmer edit section *** (Начальник CustomAttributes)
     [AutoAltered()]
     [AccessType(ICSSoft.STORMNET.AccessType.none)]
+    [View("НачальникE", new string[] {
+            "IDсотрдника as \'I dсотрдника\'",
+            "Сотрудник as \'Сотрудник\'",
+            "Сотрудник.IDдолжности as \'I dдолжности\'"}, Hidden=new string[] {
+            "Сотрудник.IDдолжности"})]
+    [MasterViewDefineAttribute("НачальникE", "Сотрудник", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "IDдолжности")]
+    [View("НачальникL", new string[] {
+            "IDсотрдника as \'I dсотрдника\'",
+            "Сотрудник.IDдолжности as \'I dдолжности\'"})]
     public class Начальник : ICSSoft.STORMNET.DataObject
     {
         
@@ -103,6 +112,35 @@ namespace IIS.Otdel_kadrov
                 // *** Start programmer edit section *** (Начальник.Сотрудник Set end)
 
                 // *** End programmer edit section *** (Начальник.Сотрудник Set end)
+            }
+        }
+        
+        /// <summary>
+        /// Class views container.
+        /// </summary>
+        public class Views
+        {
+            
+            /// <summary>
+            /// "НачальникE" view.
+            /// </summary>
+            public static ICSSoft.STORMNET.View НачальникE
+            {
+                get
+                {
+                    return ICSSoft.STORMNET.Information.GetView("НачальникE", typeof(IIS.Otdel_kadrov.Начальник));
+                }
+            }
+            
+            /// <summary>
+            /// "НачальникL" view.
+            /// </summary>
+            public static ICSSoft.STORMNET.View НачальникL
+            {
+                get
+                {
+                    return ICSSoft.STORMNET.Information.GetView("НачальникL", typeof(IIS.Otdel_kadrov.Начальник));
+                }
             }
         }
     }

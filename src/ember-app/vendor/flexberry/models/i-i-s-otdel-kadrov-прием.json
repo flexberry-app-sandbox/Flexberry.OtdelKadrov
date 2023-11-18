@@ -58,7 +58,132 @@
     }
   ],
   "hasMany": [],
-  "projections": [],
+  "projections": [
+    {
+      "name": "ПриемE",
+      "modelName": "i-i-s-otdel-kadrov-прием",
+      "attrs": [
+        {
+          "name": "iDсотрдника",
+          "caption": "I dсотрдника",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "iDдолжности",
+          "caption": "I dдолжности",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "iDподразделения",
+          "caption": "I dподразделения",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Подразделения",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [],
+          "index": 3,
+          "type": "standard",
+          "caption": "Подразделения",
+          "name": "подразделения",
+          "relatedTo": "i-i-s-otdel-kadrov-подразделения",
+          "inverse": null
+        },
+        {
+          "lookupValue": "IDсотрдника",
+          "lookupValueField": "iDсотрдника",
+          "relationName": "Начальник",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "iDсотрдника",
+              "caption": "I dсотрдника",
+              "hidden": true,
+              "index": 5
+            }
+          ],
+          "index": 4,
+          "type": "standard",
+          "caption": "Начальник",
+          "name": "начальник",
+          "relatedTo": "i-i-s-otdel-kadrov-начальник",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Должности",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [],
+          "index": 6,
+          "type": "standard",
+          "caption": "Должности",
+          "name": "должности",
+          "relatedTo": "i-i-s-otdel-kadrov-должности",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "ПриемL",
+      "modelName": "i-i-s-otdel-kadrov-прием",
+      "attrs": [
+        {
+          "name": "iDсотрдника",
+          "caption": "I dсотрдника",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "iDдолжности",
+          "caption": "I dдолжности",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "iDподразделения",
+          "caption": "I dподразделения",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Начальник",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "iDсотрдника",
+              "caption": "I dсотрдника",
+              "hidden": false,
+              "index": 3
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "I dсотрдника",
+          "name": "начальник",
+          "relatedTo": "i-i-s-otdel-kadrov-начальник",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
   "stored": true,
   "offline": true,
   "external": false

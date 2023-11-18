@@ -1,6 +1,22 @@
 import $ from 'jquery';
 import EmberFlexberryTranslations from 'ember-flexberry/locales/ru/translations';
 
+import IISOtdel_kadrovГрафикLForm from './forms/i-i-s-otdel-kadrov-график-l';
+import IISOtdel_kadrovДолжностиLForm from './forms/i-i-s-otdel-kadrov-должности-l';
+import IISOtdel_kadrovНачальникLForm from './forms/i-i-s-otdel-kadrov-начальник-l';
+import IISOtdel_kadrovПодразделенияLForm from './forms/i-i-s-otdel-kadrov-подразделения-l';
+import IISOtdel_kadrovПриемLForm from './forms/i-i-s-otdel-kadrov-прием-l';
+import IISOtdel_kadrovРасчетLForm from './forms/i-i-s-otdel-kadrov-расчет-l';
+import IISOtdel_kadrovСотрудникLForm from './forms/i-i-s-otdel-kadrov-сотрудник-l';
+import IISOtdel_kadrovУвольнениеLForm from './forms/i-i-s-otdel-kadrov-увольнение-l';
+import IISOtdel_kadrovГрафикEForm from './forms/i-i-s-otdel-kadrov-график-e';
+import IISOtdel_kadrovДолжностиEForm from './forms/i-i-s-otdel-kadrov-должности-e';
+import IISOtdel_kadrovНачальникEForm from './forms/i-i-s-otdel-kadrov-начальник-e';
+import IISOtdel_kadrovПодразделенияEForm from './forms/i-i-s-otdel-kadrov-подразделения-e';
+import IISOtdel_kadrovПриемEForm from './forms/i-i-s-otdel-kadrov-прием-e';
+import IISOtdel_kadrovРасчетEForm from './forms/i-i-s-otdel-kadrov-расчет-e';
+import IISOtdel_kadrovСотрудникEForm from './forms/i-i-s-otdel-kadrov-сотрудник-e';
+import IISOtdel_kadrovУвольнениеEForm from './forms/i-i-s-otdel-kadrov-увольнение-e';
 import IISOtdel_kadrovГрафикModel from './models/i-i-s-otdel-kadrov-график';
 import IISOtdel_kadrovДолжностиModel from './models/i-i-s-otdel-kadrov-должности';
 import IISOtdel_kadrovНачальникModel from './models/i-i-s-otdel-kadrov-начальник';
@@ -25,7 +41,7 @@ $.extend(true, translations, {
     'i-i-s-otdel-kadrov-увольнение': IISOtdel_kadrovУвольнениеModel
   },
 
-  'application-name': '',
+  'application-name': 'Otdel_kadrov',
 
   forms: {
     loading: {
@@ -64,7 +80,7 @@ $.extend(true, translations, {
       },
 
       footer: {
-        'application-name': '',
+        'application-name': 'Otdel_kadrov',
         'application-version': {
           caption: 'Версия аддона {{version}}',
           title: 'Это версия аддона ember-flexberry, которая сейчас используется в этом тестовом приложении ' +
@@ -75,8 +91,8 @@ $.extend(true, translations, {
 
       sitemap: {
         'application-name': {
-          caption: '',
-          title: ''
+          caption: 'Otdel_kadrov',
+          title: 'Otdel_kadrov'
         },
         'application-version': {
           caption: 'Версия аддона {{version}}',
@@ -88,7 +104,58 @@ $.extend(true, translations, {
           caption: 'Главная',
           title: ''
         },
-
+        'otdel-kadrov': {
+          caption: 'Otdel_kadrov',
+          title: 'Otdel_kadrov',
+          'i-i-s-otdel-kadrov-график-l': {
+            caption: 'График',
+            title: ''
+          },
+          'i-i-s-otdel-kadrov-прием-l': {
+            caption: 'Прием',
+            title: ''
+          },
+          'i-i-s-otdel-kadrov-увольнение-l': {
+            caption: 'Увольнение',
+            title: ''
+          },
+          'i-i-s-otdel-kadrov-подразделения-l': {
+            caption: 'Подразделения',
+            title: ''
+          },
+          'i-i-s-otdel-kadrov-расчет-l': {
+            caption: 'Расчет',
+            title: ''
+          },
+          'i-i-s-otdel-kadrov-сотрудник-l': {
+            caption: 'Сотрудник',
+            title: ''
+          },
+          'i-i-s-otdel-kadrov-должности-l': {
+            caption: 'Должности',
+            title: ''
+          },
+          'i-i-s-otdel-kadrov-начальник-l': {
+            caption: 'Начальник',
+            title: ''
+          }
+        },
+        справочники: {
+          caption: 'Справочники',
+          title: 'Справочники',
+          'i-i-s-otdel-kadrov-сотрудник-l': {
+            caption: 'СотрудникL',
+            title: 'Сотрудник'
+          },
+          'i-i-s-otdel-kadrov-подразделения-l': {
+            caption: 'ПодразделенияL',
+            title: 'Подразделения'
+          },
+          'i-i-s-otdel-kadrov-должности-l': {
+            caption: 'ДолжностиL',
+            title: 'Должности'
+          }
+        }
       }
     },
 
@@ -100,7 +167,22 @@ $.extend(true, translations, {
       'delete-success-message': 'Объект удален',
       'delete-error-message-caption': 'Ошибка удаления'
     },
-
+    'i-i-s-otdel-kadrov-график-l': IISOtdel_kadrovГрафикLForm,
+    'i-i-s-otdel-kadrov-должности-l': IISOtdel_kadrovДолжностиLForm,
+    'i-i-s-otdel-kadrov-начальник-l': IISOtdel_kadrovНачальникLForm,
+    'i-i-s-otdel-kadrov-подразделения-l': IISOtdel_kadrovПодразделенияLForm,
+    'i-i-s-otdel-kadrov-прием-l': IISOtdel_kadrovПриемLForm,
+    'i-i-s-otdel-kadrov-расчет-l': IISOtdel_kadrovРасчетLForm,
+    'i-i-s-otdel-kadrov-сотрудник-l': IISOtdel_kadrovСотрудникLForm,
+    'i-i-s-otdel-kadrov-увольнение-l': IISOtdel_kadrovУвольнениеLForm,
+    'i-i-s-otdel-kadrov-график-e': IISOtdel_kadrovГрафикEForm,
+    'i-i-s-otdel-kadrov-должности-e': IISOtdel_kadrovДолжностиEForm,
+    'i-i-s-otdel-kadrov-начальник-e': IISOtdel_kadrovНачальникEForm,
+    'i-i-s-otdel-kadrov-подразделения-e': IISOtdel_kadrovПодразделенияEForm,
+    'i-i-s-otdel-kadrov-прием-e': IISOtdel_kadrovПриемEForm,
+    'i-i-s-otdel-kadrov-расчет-e': IISOtdel_kadrovРасчетEForm,
+    'i-i-s-otdel-kadrov-сотрудник-e': IISOtdel_kadrovСотрудникEForm,
+    'i-i-s-otdel-kadrov-увольнение-e': IISOtdel_kadrovУвольнениеEForm
   },
 
 });

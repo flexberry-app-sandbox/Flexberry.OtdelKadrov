@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-otdel-kadrov-начальник-e",
+  "editForm": "i-i-s-otdel-kadrov-начальник-e",
+  "external": false,
+  "caption": "Начальник",
+  "name": "IISOtdel_kadrovНачальникL",
+  "className": "НачальникL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-otdel-kadrov-начальник",
+      "modelProjection": "НачальникL"
+    }
+  ]
+}

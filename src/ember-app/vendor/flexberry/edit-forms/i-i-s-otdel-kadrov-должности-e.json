@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Должности",
+  "name": "IISOtdel_kadrovДолжностиE",
+  "className": "ДолжностиE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-otdel-kadrov-должности",
+      "modelProjection": "ДолжностиE"
+    }
+  ]
+}

@@ -8,7 +8,22 @@
   "attrs": [],
   "belongsTo": [],
   "hasMany": [],
-  "projections": [],
+  "projections": [
+    {
+      "name": "ПодразделенияE",
+      "modelName": "i-i-s-otdel-kadrov-подразделения",
+      "attrs": [],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "ПодразделенияL",
+      "modelName": "i-i-s-otdel-kadrov-подразделения",
+      "attrs": [],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
   "stored": true,
   "offline": true,
   "external": false

@@ -28,6 +28,21 @@ namespace IIS.Otdel_kadrov
     // *** End programmer edit section *** (Увольнение CustomAttributes)
     [AutoAltered()]
     [AccessType(ICSSoft.STORMNET.AccessType.none)]
+    [View("УвольнениеE", new string[] {
+            "IDсотрдника as \'I dсотрдника\'",
+            "IDподразделения as \'I dподразделения\'",
+            "Подразделения as \'Подразделения\'",
+            "Должности as \'Должности\'",
+            "Начальник as \'Начальник\'",
+            "Начальник.IDсотрдника as \'I dсотрдника\'"}, Hidden=new string[] {
+            "Начальник.IDсотрдника"})]
+    [MasterViewDefineAttribute("УвольнениеE", "Подразделения", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "")]
+    [MasterViewDefineAttribute("УвольнениеE", "Должности", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "")]
+    [MasterViewDefineAttribute("УвольнениеE", "Начальник", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "IDсотрдника")]
+    [View("УвольнениеL", new string[] {
+            "IDсотрдника as \'I dсотрдника\'",
+            "IDподразделения as \'I dподразделения\'",
+            "Начальник.IDсотрдника as \'I dсотрдника\'"})]
     public class Увольнение : ICSSoft.STORMNET.DataObject
     {
         
@@ -209,6 +224,35 @@ namespace IIS.Otdel_kadrov
                 // *** Start programmer edit section *** (Увольнение.Подразделения Set end)
 
                 // *** End programmer edit section *** (Увольнение.Подразделения Set end)
+            }
+        }
+        
+        /// <summary>
+        /// Class views container.
+        /// </summary>
+        public class Views
+        {
+            
+            /// <summary>
+            /// "УвольнениеE" view.
+            /// </summary>
+            public static ICSSoft.STORMNET.View УвольнениеE
+            {
+                get
+                {
+                    return ICSSoft.STORMNET.Information.GetView("УвольнениеE", typeof(IIS.Otdel_kadrov.Увольнение));
+                }
+            }
+            
+            /// <summary>
+            /// "УвольнениеL" view.
+            /// </summary>
+            public static ICSSoft.STORMNET.View УвольнениеL
+            {
+                get
+                {
+                    return ICSSoft.STORMNET.Information.GetView("УвольнениеL", typeof(IIS.Otdel_kadrov.Увольнение));
+                }
             }
         }
     }

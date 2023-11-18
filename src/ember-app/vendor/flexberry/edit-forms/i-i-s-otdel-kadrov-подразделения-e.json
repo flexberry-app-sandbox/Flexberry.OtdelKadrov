@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Подразделения",
+  "name": "IISOtdel_kadrovПодразделенияE",
+  "className": "ПодразделенияE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-otdel-kadrov-подразделения",
+      "modelProjection": "ПодразделенияE"
+    }
+  ]
+}

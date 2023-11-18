@@ -28,6 +28,15 @@ namespace IIS.Otdel_kadrov
     // *** End programmer edit section *** (График CustomAttributes)
     [AutoAltered()]
     [AccessType(ICSSoft.STORMNET.AccessType.none)]
+    [View("ГрафикE", new string[] {
+            "IDсотрдника as \'I dсотрдника\'",
+            "Начальник as \'Начальник\'",
+            "Начальник.IDсотрдника as \'I dсотрдника\'"}, Hidden=new string[] {
+            "Начальник.IDсотрдника"})]
+    [MasterViewDefineAttribute("ГрафикE", "Начальник", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "IDсотрдника")]
+    [View("ГрафикL", new string[] {
+            "IDсотрдника as \'I dсотрдника\'",
+            "Начальник.IDсотрдника as \'I dсотрдника\'"})]
     public class График : ICSSoft.STORMNET.DataObject
     {
         
@@ -103,6 +112,35 @@ namespace IIS.Otdel_kadrov
                 // *** Start programmer edit section *** (График.Начальник Set end)
 
                 // *** End programmer edit section *** (График.Начальник Set end)
+            }
+        }
+        
+        /// <summary>
+        /// Class views container.
+        /// </summary>
+        public class Views
+        {
+            
+            /// <summary>
+            /// "ГрафикE" view.
+            /// </summary>
+            public static ICSSoft.STORMNET.View ГрафикE
+            {
+                get
+                {
+                    return ICSSoft.STORMNET.Information.GetView("ГрафикE", typeof(IIS.Otdel_kadrov.График));
+                }
+            }
+            
+            /// <summary>
+            /// "ГрафикL" view.
+            /// </summary>
+            public static ICSSoft.STORMNET.View ГрафикL
+            {
+                get
+                {
+                    return ICSSoft.STORMNET.Information.GetView("ГрафикL", typeof(IIS.Otdel_kadrov.График));
+                }
             }
         }
     }

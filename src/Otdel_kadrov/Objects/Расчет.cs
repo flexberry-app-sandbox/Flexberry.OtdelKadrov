@@ -28,6 +28,15 @@ namespace IIS.Otdel_kadrov
     // *** End programmer edit section *** (Расчет CustomAttributes)
     [AutoAltered()]
     [AccessType(ICSSoft.STORMNET.AccessType.none)]
+    [View("РасчетE", new string[] {
+            "IDсотрдника as \'I dсотрдника\'",
+            "Начальник as \'Начальник\'",
+            "Начальник.IDсотрдника as \'I dсотрдника\'"}, Hidden=new string[] {
+            "Начальник.IDсотрдника"})]
+    [MasterViewDefineAttribute("РасчетE", "Начальник", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "IDсотрдника")]
+    [View("РасчетL", new string[] {
+            "IDсотрдника as \'I dсотрдника\'",
+            "Начальник.IDсотрдника as \'I dсотрдника\'"})]
     public class Расчет : ICSSoft.STORMNET.DataObject
     {
         
@@ -103,6 +112,35 @@ namespace IIS.Otdel_kadrov
                 // *** Start programmer edit section *** (Расчет.Начальник Set end)
 
                 // *** End programmer edit section *** (Расчет.Начальник Set end)
+            }
+        }
+        
+        /// <summary>
+        /// Class views container.
+        /// </summary>
+        public class Views
+        {
+            
+            /// <summary>
+            /// "РасчетE" view.
+            /// </summary>
+            public static ICSSoft.STORMNET.View РасчетE
+            {
+                get
+                {
+                    return ICSSoft.STORMNET.Information.GetView("РасчетE", typeof(IIS.Otdel_kadrov.Расчет));
+                }
+            }
+            
+            /// <summary>
+            /// "РасчетL" view.
+            /// </summary>
+            public static ICSSoft.STORMNET.View РасчетL
+            {
+                get
+                {
+                    return ICSSoft.STORMNET.Information.GetView("РасчетL", typeof(IIS.Otdel_kadrov.Расчет));
+                }
             }
         }
     }
